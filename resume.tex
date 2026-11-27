@@ -13,7 +13,9 @@
 % Color for highlights
 % russell Colors: russell-emerald, russell-skyblue, russell-red, russell-pink, russell-orange
 %                 russell-nephritis, russell-concrete, russell-darknight, russell-purple
-\colorlet{russell}{russell-black}
+\definecolor{cvblue}{HTML}{2418B5}
+\definecolor{cvpaleblue}{HTML}{DDDFFA}
+\colorlet{russell}{cvblue}
 % Uncomment if you would like to specify your own color
 % \definecolor{russell}{HTML}{CA63A8}
 
@@ -71,7 +73,7 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\input{cv/header.tex}
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed

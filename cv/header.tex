@@ -1,0 +1,34 @@
+% Personal header: deep blue inspired by the supplied IDOM reference.
+\makeatletter
+\begin{tcolorbox}[
+  enhanced,
+  colback=cvblue,
+  colframe=cvblue,
+  boxrule=0pt,
+  arc=2mm,
+  left=6mm, right=5mm, top=4mm, bottom=4mm,
+  before skip=0pt, after skip=4mm
+]
+  \begin{minipage}[c]{0.76\linewidth}
+    \raggedright
+    {\headerfont\fontsize{25}{28}\selectfont\color{white}\bfseries
+      \@firstname\\\@lastname\par}
+    \vspace{2mm}
+    {\headerfont\fontsize{9}{12}\selectfont\color{cvpaleblue}
+      \@address\par}
+    \vspace{2mm}
+    {\headerfont\fontsize{8}{12}\selectfont\color{white}
+      \href{tel:\@mobile}{\faMobile\enspace\@mobile}\quad
+      \href{mailto:\@email}{\faEnvelope\enspace\@email}\\
+      \href{https://\@homepage}{\faGlobe\enspace\@homepage}\quad
+      \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\enspace\@linkedin}\par}
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.21\linewidth}
+    \centering
+    \begin{tikzpicture}
+      \node[circle, draw=white, line width=0.8mm, inner sep=1.45cm,
+        fill overzoom image={img/file_00000000712882129f7ab79ec62292bc.png}] {};
+    \end{tikzpicture}
+  \end{minipage}
+\end{tcolorbox}
+\makeatother
