@@ -684,7 +684,8 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r L{\textwidth * \real{0.9}}}
+    % Top-align labels so text extraction reads each category before its details.
+    \begin{tabular*}{\linewidth}{@{} >{\raggedleft\arraybackslash}p{\linewidth * \real{0.23}} >{\raggedright\arraybackslash}p{\linewidth * \real{0.77} - 2\tabcolsep}@{}}
 }{%
     \end{tabular*}
   \end{center}
@@ -703,7 +704,7 @@
 }
 
 % Define an environment for cvinterests
-\newenvironment{cvinterest}{%
+\newenvironment{cvinterests}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2.0mm}
   \begin{center}

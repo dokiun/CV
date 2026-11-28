@@ -1,3 +1,4 @@
+% !TeX program = xelatex
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
@@ -28,6 +29,9 @@
 
 % Set false if you don't want to highlight section with russell color
 \setbool{acvSectionColorHighlight}{true}
+% Apply the accent to the complete section title (the class colors only three letters).
+\renewcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{russell}#1}}
+\renewcommand{\acvSectionTopSkip}{2mm}
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
@@ -48,6 +52,11 @@
 %\dateofbirth{January 1st, 1970}
 \homepage{dokiun.github.io} 
 \linkedin{julian-mateo-vargas-riveros}
+\hypersetup{
+  pdfauthor={Julian Mateo Vargas Riveros},
+  pdftitle={Julian Mateo Vargas Riveros - Hoja de vida},
+  pdfsubject={Ingeniería Mecánica}
+}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -78,7 +87,7 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
+  {}
   {}
   {\thepage}
 
@@ -88,13 +97,13 @@
 %-------------------------------------------------------------------------------
 \input{cv/summary.tex}
 \input{cv/education.tex}
-\input{cv/experience.tex}
 \input{cv/skills}
-\input{cv/volunteering.tex}
-\input{cv/languages.tex}
+\input{cv/experience.tex}
 \input{cv/projects}
 %\input{cv/skills.tex}
 \input{cv/achievements.tex}
+\input{cv/volunteering.tex}
+\input{cv/languages.tex}
 %\input{cv/publications.tex}
 \input{cv/interests.tex}
 

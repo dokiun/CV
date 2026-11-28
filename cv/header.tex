@@ -18,17 +18,19 @@
       \@address\par}
     \vspace{2mm}
     {\headerfont\fontsize{8}{12}\selectfont\color{white}
-      \href{tel:\@mobile}{\faMobile\enspace\@mobile}\quad
-      \href{mailto:\@email}{\faEnvelope\enspace\@email}\\
-      \href{https://\@homepage}{\faGlobe\enspace\@homepage}\quad
-      \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedin\enspace\@linkedin}\par}
+      \href{tel:\@mobile}{Tel.: \@mobile}\quad
+      \href{mailto:\@email}{Correo: \@email}\\
+      \href{https://\@homepage}{Web: \@homepage}\quad
+      \href{https://www.linkedin.com/in/\@linkedin}{LinkedIn: \@linkedin}\par}
   \end{minipage}\hfill
   \begin{minipage}[c]{0.21\linewidth}
     \centering
+    \makebox[\linewidth][c]{\hspace*{-8mm}% Shift portrait 4 mm to the left.
     \begin{tikzpicture}
       \node[circle, draw=white, line width=0.8mm, inner sep=1.45cm,
         fill overzoom image={img/file_00000000712882129f7ab79ec62292bc.png}] {};
     \end{tikzpicture}
+    }
   \end{minipage}
 \end{tcolorbox}
 \makeatother
